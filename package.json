@@ -1,0 +1,16 @@
+{
+  "name": "not-messenger",
+  "dependencies": {
+    "async": "^1.4.1",
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "watch": "forever -w server.js"
+  },
+  "devDependencies": {
+    "forever": "^0.15.1"
+  }
+}
