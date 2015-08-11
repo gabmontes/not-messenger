@@ -6,6 +6,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var session = require("express-session");
+var cors = require("cors");
 
 var chatManager = require("./chat-manager");
 
@@ -28,6 +29,10 @@ app.use(session({
     saveUninitialized: false,
     secret: "not-messenger-secret",
 }));
+
+// Allow CORS
+
+app.use(cors());
 
 // Express routes
 
