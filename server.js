@@ -32,7 +32,10 @@ app.use(session({
 
 // Allow CORS
 
-app.use(cors());
+app.all("*", cors({
+    origin: true,
+    credentials: true
+}));
 
 // Express routes
 
