@@ -7,6 +7,7 @@
     "express": "^4.13.1",
     "express-session": "^1.11.3"
   },
+  "repository": "CoderHouse/not-messenger",
   "scripts": {
     "prestart": "npm install",
     "watch": "forever -w server.js"
