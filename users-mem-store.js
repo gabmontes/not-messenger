@@ -36,6 +36,8 @@ User.prototype.send = function (to, text, callback) {
         time: now
     });
 
+    to.chats[this.name] = to.chats[this.name] || [];
+    to.chats[this.name].push(chatItem);
     var fromPeer = to.peers.map(function (peer) {
         return peer.name;
     }).indexOf(this.name);
